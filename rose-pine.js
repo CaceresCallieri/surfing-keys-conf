@@ -304,7 +304,7 @@ settings.theme = `
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#191724), color-stop(100%,#191724));
     box-shadow: 0px 3px 7px 0px #21202e;
   }
-  div.sk_tab_hint {
+  #sk_tabs.vertical div.sk_tab_hint {
     position: relative;
 }
   div.sk_tab_wrap {
