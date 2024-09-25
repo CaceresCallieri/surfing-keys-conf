@@ -305,7 +305,7 @@ settings.theme = `
     box-shadow: 0px 3px 7px 0px #21202e;
   }
   #sk_tabs.vertical div.sk_tab_hint {
-    position: relative;
+    position: inherit;
 }
   div.sk_tab_wrap {
     display: inline-block;
