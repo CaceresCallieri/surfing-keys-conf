@@ -5,7 +5,7 @@
 // blurb: All natural pine, faux fur and a bit of soho vibes for the classy minimalist
 // Minimal modifications by CaceresCallieri
 
-api.unmap("T", /google.com/);
+api.unmap("T");
 settings.digitForRepeat = false;
 
 const hintsCss =
