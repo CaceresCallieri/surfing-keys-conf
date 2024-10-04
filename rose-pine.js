@@ -5,22 +5,8 @@
 // blurb: All natural pine, faux fur and a bit of soho vibes for the classy minimalist
 // Minimal modifications by CaceresCallieri
 
-unmap("0");
-unmap("1", /jcc-art-gallery.netlify.app/);
-unmap("2", /google.com/);
-api.unmap("3", /jcc-art-gallery.netlify.app/);
-api.unmap("4", /google.com/);
-api.unmap("5", /youtube.com/);
-api.unmap("6", /<all_urls>/);
-api.unmap(
-  "7",
-  /^(https?:\/\/)?(www\.)?([a-zA-Z0-9-]+\.[a-zA-Z]{2,})(\/[^\s]*)?$/,
-);
-unmap("8");
-unmap("9");
-
-unmap("T");
 api.unmap("T", /google.com/);
+settings.digitForRepeat = false;
 
 const hintsCss =
   "font-size: 13pt; font-family: 'JetBrains Mono NL', 'Cascadia Code', 'Helvetica Neue', Helvetica, Arial, sans-serif; border: 0px; color: #e0def4 !important; background: #191724; background-color: #191724";
