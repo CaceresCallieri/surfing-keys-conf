@@ -5,16 +5,16 @@
 // blurb: All natural pine, faux fur and a bit of soho vibes for the classy minimalist
 // Minimal modifications by CaceresCallieri
 
-api.unmap("0");
-api.unmap("1");
-api.unmap("2");
+unmap("0");
+unmap("1");
+unmap("2");
 api.unmap("3");
 api.unmap("4");
 api.unmap("5");
 api.unmap("6");
 api.unmap("7");
-api.unmap("8");
-api.unmap("9");
+settings.unmap("8");
+settings.unmap("9");
 
 const hintsCss =
   "font-size: 13pt; font-family: 'JetBrains Mono NL', 'Cascadia Code', 'Helvetica Neue', Helvetica, Arial, sans-serif; border: 0px; color: #e0def4 !important; background: #191724; background-color: #191724";
