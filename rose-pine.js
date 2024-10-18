@@ -3,11 +3,18 @@
 // license: unlicense
 // upstream: https://github.com/rose-pine/surfingkeys/blob/main/dist/rose-pine.conf
 // blurb: All natural pine, faux fur and a bit of soho vibes for the classy minimalist
-// Minimal modifications by CaceresCallieri
+// Modifications by CaceresCallieri
 
+// Provide compatibility with Goto Tab Extension
 api.unmap("T");
 settings.digitForRepeat = false;
 api.unmap("0");
+
+// Traverse through tabs with H,L; E,R remains available for one handed mobility
+api.unmap("H");
+api.unmap("L");
+api.map("H", "E");
+api.map("L", "R");
 
 const hintsCss =
   "font-size: 13pt; font-family: 'JetBrains Mono NL', 'Cascadia Code', 'Helvetica Neue', Helvetica, Arial, sans-serif; border: 0px; color: #e0def4 !important; background: #191724; background-color: #191724";
