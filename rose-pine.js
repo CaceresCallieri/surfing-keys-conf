@@ -23,6 +23,12 @@ api.Hints.style(hintsCss);
 api.Hints.style(hintsCss, "text");
 
 settings.theme = `
+:root {
+    --browser-background-color: #1B1B1B;
+    --browser-text-color: #DDC7A1;
+    --browser-accent-color: #2C4945;
+}
+
   .sk_theme {
     background: #191724;
     color: #e0def4;
@@ -225,6 +231,7 @@ settings.theme = `
     background: #191724;
     color: #e0def4;
   }
+  /* sk_editor is the vim input mode */
   #sk_usage, #sk_popup, #sk_editor {
     overflow: auto;
     position: fixed;
@@ -232,11 +239,34 @@ settings.theme = `
     max-height: 80%;
     top: 10%;
     left: 10%;
+    
     text-align: left;
     box-shadow: #21202e;
     z-index: 2147483298;
+    
     padding: 1rem;
+    border-radius: 10px;
+    background-color: var(--browser-background-color) !important;
+    color: var(--browser-text-color) !important;
   }
+  
+  .ace_gutter, .ace_gutter-active-line { /* Gutter with line numbers to the left of the input field */
+    background-color: var(--browser-background-color) !important;
+    color: var(--browser-text-color) !important;
+  }
+  
+  .normal-mode .ace_cursor {
+      background-color: var(--browser-accent-color);
+  }
+  
+  .normal-mode .ace_hidden-cursors .ace_cursor { /* Unfocused normal mode cursor */
+    border: 1px solid var(--browser-accent-color);
+  }
+  
+  .ace-chrome .ace_cursor { /* Insert mode */
+      color: var(--browser-accent-color);
+  }
+  
   #sk_nvim {
     position: fixed;
     top: 10%;
