@@ -1,9 +1,6 @@
-// name: Rosé Pine
-// author: thuanowa
-// license: unlicense
-// upstream: https://github.com/rose-pine/surfingkeys/blob/main/dist/rose-pine.conf
-// blurb: All natural pine, faux fur and a bit of soho vibes for the classy minimalist
-// Modifications by CaceresCallieri
+// upstream: https://github.com/CaceresCallieri/surfing-keys-conf
+// blurb: Configuration file for Surfing Keys Extension. Theme: All natural pine, faux fur and a bit of soho vibes for the classy minimalist
+// Original file by thuanowa (Rosé Pine)
 
 // Provide compatibility with Goto Tab Extension
 api.unmap("T");
