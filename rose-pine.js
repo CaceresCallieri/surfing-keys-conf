@@ -27,6 +27,8 @@ settings.theme = `
     --browser-background-color: #1B1B1B;
     --browser-text-color: #DDC7A1;
     --browser-accent-color: #2C4945;
+
+    --ace-active-line-color: rgba(0, 0, 0, 0.15);
 }
 
   .sk_theme {
@@ -252,8 +254,16 @@ settings.theme = `
     background-color: var(--browser-background-color) !important;
     color: var(--browser-text-color) !important;
   }
+
+  .ace-chrome .ace_marker-layer .ace_active-line { /* Editor active line */
+    background-color: var(--ace-active-line-color);
+  }
+
+  .ace-chrome .ace_gutter-active-line { /* Editor gutter column active cell/line */
+    background-color: var(--ace-active-line-color);
+}
   
-  .ace_gutter, .ace_gutter-active-line { /* Gutter with line numbers to the left of the input field */
+  .ace_gutter { /* Gutter with line numbers to the left of the input field */
     background-color: var(--browser-background-color) !important;
     color: var(--browser-text-color) !important;
   }
