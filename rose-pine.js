@@ -231,14 +231,17 @@ settings.theme = `
     background: #191724;
     color: #e0def4;
   }
+
   /* sk_editor is the vim input mode */
   #sk_usage, #sk_popup, #sk_editor {
     overflow: auto;
     position: fixed;
     width: 80%;
+    max-width: 760px; /* Larger than this, a white line appears across the editor */
     max-height: 80%;
     top: 10%;
-    left: 10%;
+    left: 50%;
+    transform: translateX(-50%); /* Adjust position to center */
     
     text-align: left;
     box-shadow: #21202e;
