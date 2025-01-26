@@ -7,11 +7,11 @@ api.unmap("T");
 settings.digitForRepeat = false;
 api.unmap("0");
 
-// Traverse through tabs with H,L; E,R remains available for one handed mobility
-api.unmap("H");
-api.unmap("L");
-api.map("H", "E");
-api.map("L", "R");
+// Traverse through tabs with J,K; E,R remains available for one handed mobility
+api.unmap("K");
+api.unmap("J");
+api.map("K", "E");
+api.map("J", "R");
 
 const hintsCss =
   "font-size: 11pt; font-family: 'JetBrains Mono NL', 'Cascadia Code', 'Helvetica Neue', Helvetica, Arial, sans-serif; border: 0px; color: #e0def4 !important; background: #191724; background-color: #191724";
