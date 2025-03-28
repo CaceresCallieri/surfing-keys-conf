@@ -13,11 +13,17 @@ api.unmap("J");
 api.map("K", "E");
 api.map("J", "R");
 
-const hintsCss =
-  "font-size: 11pt; font-family: 'JetBrains Mono NL', 'Cascadia Code', 'Helvetica Neue', Helvetica, Arial, sans-serif; border: 0px; color: #e0def4 !important; background: #191724; background-color: #191724";
+const hintsCss = [
+  "font-size: 11pt; font-family: 'JetBrains Mono NL', 'Cascadia Code', 'Helvetica Neue', Helvetica, Arial, sans-serif;",
+  "border: 0px;",
+  "color: #ffffff !important;",
+  "background: rgba(0, 0, 0, 0.75)",
+];
 
-api.Hints.style(hintsCss);
-api.Hints.style(hintsCss, "text");
+const formattedHintsCss = hintsCss.join(" ");
+
+api.Hints.style(formattedHintsCss);
+api.Hints.style(formattedHintsCss, "text");
 
 settings.theme = `
 :root {
