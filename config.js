@@ -4,8 +4,11 @@
 
 // Provide compatibility with Goto Tab Extension
 api.unmap("T");
-settings.digitForRepeat = false;
 api.unmap("0");
+settings.digitForRepeat = false;
+
+// Remove search function in favor of native browser one
+api.unmap("/");
 
 // Traverse through tabs with J,K; E,R remains available for one handed mobility
 api.unmap("K");
