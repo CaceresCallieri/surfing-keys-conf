@@ -17,10 +17,10 @@ api.map("K", "E");
 api.map("J", "R");
 
 const hintsCss = [
-  "font-size: 11pt; font-family: 'JetBrains Mono NL', 'Cascadia Code', 'Helvetica Neue', Helvetica, Arial, sans-serif;",
-  "border: 0px;",
-  "color: #ffffff !important;",
-  "background: rgba(0, 0, 0, 0.75)",
+	"font-size: 11pt; font-family: 'JetBrains Mono NL', 'Cascadia Code', 'Helvetica Neue', Helvetica, Arial, sans-serif;",
+	"border: 0px;",
+	"color: #ffffff !important;",
+	"background: rgba(0, 0, 0, 0.75)",
 ];
 
 const formattedHintsCss = hintsCss.join(" ");
@@ -30,9 +30,9 @@ api.Hints.style(formattedHintsCss, "text");
 
 settings.theme = `
 :root {
-    --browser-background-color: #1B1B1B;
-    --browser-text-color: #DDC7A1;
-    --browser-accent-color: #2C4945;
+    --ace-background-color: rgba(30,30,30, 0.3);
+    --browser-text-color: #ffffff;
+    --browser-accent-color: #999999;
 
     --ace-active-line-color: rgba(0, 0, 0, 0.15);
 }
@@ -257,7 +257,8 @@ settings.theme = `
     
     padding: 1rem;
     border-radius: 10px;
-    background-color: var(--browser-background-color) !important;
+    background-color: var(--ace-background-color) !important;
+    backdrop-filter: blur(4px) !important;
     color: var(--browser-text-color) !important;
   }
 
@@ -270,7 +271,7 @@ settings.theme = `
 }
   
   .ace_gutter { /* Gutter with line numbers to the left of the input field */
-    background-color: var(--browser-background-color) !important;
+    background-color: var(--ace-background-color) !important;
     color: var(--browser-text-color) !important;
   }
   
