@@ -16,6 +16,10 @@ api.unmap("J");
 api.map("K", "E");
 api.map("J", "R");
 
+// Remap "Toggle Surfing Keys" action from "Alt+s" to "Alt+t"
+api.unmap("<Alt-s>");
+api.map("<Alt-t>", "<Alt-s>");
+
 const hintsCss = [
 	"font-size: 11pt; font-family: 'JetBrains Mono NL', 'Cascadia Code', 'Helvetica Neue', Helvetica, Arial, sans-serif;",
 	"border: 0px;",
